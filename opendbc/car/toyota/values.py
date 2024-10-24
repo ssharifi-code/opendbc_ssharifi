@@ -324,7 +324,7 @@ class CAR(Platforms):
   LEXUS_LC_DHP = PlatformConfig(
     [ToyotaCarDocs("Lexus LC 2018")],
     CarSpecs(mass=4500. * CV.LB_TO_KG, wheelbase=2.87, steerRatio=13.0, tireStiffnessFactor=0.444),
-    dbc_dict('lexus_lc_dhp', 'toyota_adas'),
+    dbc_dict('lexus_lc_dhp_generated', 'toyota_adas'),
     flags=ToyotaFlags.UNSUPPORTED_DSU,
   )
   LEXUS_LC_TSS2 = ToyotaTSS2PlatformConfig(

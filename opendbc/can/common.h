@@ -15,7 +15,7 @@
 //#define DEBUG printf
 
 #define MAX_BAD_COUNTER 5
-#define CAN_INVALID_CNT 5
+#define CAN_INVALID_CNT 20
 
 // Car specific functions
 unsigned int honda_checksum(uint32_t address, const Signal &sig, const std::vector<uint8_t> &d);
@@ -25,7 +25,6 @@ unsigned int chrysler_checksum(uint32_t address, const Signal &sig, const std::v
 unsigned int volkswagen_mqb_checksum(uint32_t address, const Signal &sig, const std::vector<uint8_t> &d);
 unsigned int xor_checksum(uint32_t address, const Signal &sig, const std::vector<uint8_t> &d);
 unsigned int hkg_can_fd_checksum(uint32_t address, const Signal &sig, const std::vector<uint8_t> &d);
-unsigned int fca_giorgio_checksum(uint32_t address, const Signal &sig, const std::vector<uint8_t> &d);
 unsigned int pedal_checksum(uint32_t address, const Signal &sig, const std::vector<uint8_t> &d);
 
 struct CanFrame {
